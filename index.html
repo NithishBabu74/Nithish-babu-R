@@ -1,115 +1,110 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Developer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   NITHISH BABU Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Roboto:wght@300;400&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+   body {
+      font-family: 'Roboto', sans-serif;
     }
-    .hero {
-      background: linear-gradient(135deg, #007bff, #00c6ff);
-      color: white;
-      padding: 80px 0;
-      text-align: center;
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
     }
-    .section-title {
-      font-weight: 600;
-      margin-bottom: 30px;
+    /* Custom scrollbar for sidebar */
+    ::-webkit-scrollbar {
+      width: 6px;
     }
-    .card {
-      border-radius: 1rem;
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
     }
   </style>
-</head>
-<body>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="display-4">NITHISH BABU</h1>
-      <p class="lead">Full Stack Developer | Android Developer | ML Enthusiast</p>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">About Me</h2>
-      <p class="text-center">
-        I’m a passionate developer with a knack for building clean and scalable applications.
-        With experience in mobile and web development, I enjoy working on end-to-end solutions that solve real-world problems.
+ </head>
+ <body class="bg-white text-gray-600">
+  <div class="flex min-h-screen">
+   <!-- Sidebar -->
+   <aside class="flex flex-col items-center bg-gray-100 text-center w-48 py-8 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100" style="scrollbar-width: thin; scrollbar-color: #cbd5e1 #f1f1f1">
+    <img src="b053cd1fb17210bd8ecd1e646a8c4205.jpg" class="rounded-full w-28 h-28 object-cover mb-4" height="120" width="120"/>
+    <h2 class="font-playfair font-bold text-black text-lg mb-1">
+     Nithish Babu
+    </h2>
+    <p class="text-xs text-sky-400 uppercase tracking-widest mb-8 leading-tight">
+     WEB DEVELOPER IN INDIA 
+    </p>
+    <nav class="flex flex-col text-xs font-light space-y-1 w-full px-6">
+     <a class="text-sky-400 font-semibold hover:underline" href="#">
+      HOME
+     </a>
+     <a class="hover:underline" href="#">
+      ABOUT
+     </a>
+     <a class="hover:underline" href="#">
+      SERVICES
+     </a>
+     <a class="hover:underline" href="#">
+      SKILLS
+     </a>
+     <a class="hover:underline" href="#">
+      EDUCATION
+     </a>
+     <a class="hover:underline" href="#">
+      EXPERIENCE
+     </a>
+     <a class="hover:underline" href="#">
+      WORK
+     </a>
+     <a class="hover:underline" href="#">
+      BLOG
+     </a>
+     <a class="hover:underline" href="#">
+      CONTACT
+     </a>
+    </nav>
+   </aside>
+   <!-- Main content -->
+   <main class="flex-1 flex flex-col justify-center px-10 md:px-20 lg:px-32 py-16 max-w-6xl">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+     <div class="md:w-1/2">
+      <h1 class="font-playfair font-bold text-black text-4xl md:text-5xl leading-tight mb-2">
+       I am
+       <br/>
+       a Designer
+      </h1>
+      <p class="text-xs text-gray-400 mb-6 max-w-xs">
+       100% html5 bootstrap templates Made by
+       <a class="text-sky-400 hover:underline" href="https://colorlib.com" target="_blank">
+        colorlib.com
+       </a>
       </p>
+      <button class="text-xs text-gray-700 border border-gray-400 px-4 py-2 rounded tracking-wide hover:bg-gray-100 flex items-center gap-2">
+       VIEW PORTFOLIO
+       <i class="fas fa-arrow-right text-xs">
+       </i>
+      </button>
+     </div>
+     <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end">
+      <img alt="Black and white photo of a man wearing a black coat and white hoodie looking down" class="max-w-full h-auto" height="500" src="https://storage.googleapis.com/a1aa/image/80668008-0e72-42bb-3b41-f83402a2aabf.jpg" width="400"/>
+     </div>
     </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center">Skills</h2>
-      <div class="row text-center">
-        <div class="col-md-3">Android (Kotlin/Java)</div>
-        <div class="col-md-3">React / Angular</div>
-        <div class="col-md-3">Node.js / Express</div>
-        <div class="col-md-3">MongoDB / MySQL</div>
-      </div>
-      <div class="row text-center mt-3">
-        <div class="col-md-3">Firebase / Firestore</div>
-        <div class="col-md-3">Git & GitHub</div>
-        <div class="col-md-3">Machine Learning (Python)</div>
-        <div class="col-md-3">REST APIs / GraphQL</div>
-      </div>
+    <div class="flex space-x-3 mt-10">
+     <span aria-label="Active slide indicator" class="w-3 h-3 rounded-full bg-gray-600 cursor-pointer">
+     </span>
+     <span aria-label="Inactive slide indicator" class="w-3 h-3 rounded-full border border-gray-600 cursor-pointer">
+     </span>
     </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Portfolio Website</h5>
-            <p>A personal website built using HTML, CSS, Bootstrap, and deployed with GitHub Pages.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Task Manager App</h5>
-            <p>React-based task manager with Node.js backend and MongoDB. Supports user login and task tracking.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>Weather Forecast App</h5>
-            <p>Android app that fetches weather info using Retrofit and OpenWeather API. Built with MVVM.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm p-3">
-            <h5>ML Image Classifier</h5>
-            <p>Python-based project that uses TensorFlow to classify images into categories with a simple UI.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-title">Contact</h2>
-      <p>Email: john.doe@example.com</p>
-      <p>LinkedIn: linkedin.com/in/johndoe</p>
-      <p>GitHub: github.com/johndoe</p>
-    </div>
-  </section>
-
-  <footer class="text-center py-3 bg-dark text-white">
-    © 2025 John Doe. All rights reserved.
-  </footer>
-
-</body>
+   </main>
+  </div>
+ </body>
 </html>
